@@ -20,16 +20,7 @@ options.add_argument("--disable-extensions")
 
 driver = webdriver.Chrome(chromedriver, options=options)
 # driver = webdriver.Chrome(chromedriver)
-# driver.implicitly_wait(3)
+# driver.implicitly_wait(3) # 전역에서 3초 기다림
 print('*****'*3,'connected')
 url = 'https://www.yogiyo.co.kr'
 driver.get(url)
-
-
-
-
-# driver = webdriver.Chrome(chromedriver)
-# driver.implicitly_wait(3)
-
-# url = 'https://www.yogiyo.co.kr'
-# driver.get(url)

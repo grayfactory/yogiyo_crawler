@@ -4,6 +4,7 @@ import re
 from utils.connect import driver
 from utils.tools import click_more_btn
 
+# 위치설정 후, 최하단까지 스크롤바 내리기
 def scroll_to_end():
     # 알고리즘 수정 -> 현재 요기요에서 서비스 되지 않는 음식점은 검색이 되지 않음. 굳이 최하단까지 내려갈 필요가 없음
     
@@ -33,6 +34,7 @@ def scroll_to_end():
     print('*** Scroll reach to end!')
     return rest_tag
 
+# test용도
 def scroll_to_end_test():
     # 알고리즘 수정 -> 현재 요기요에서 서비스 되지 않는 음식점은 검색이 되지 않음. 굳이 최하단까지 내려갈 필요가 없음
     
@@ -42,22 +44,8 @@ def scroll_to_end_test():
     # 마지막 스크롤 지점에서 모든 element return 
     print('*** Scroll reach to end!')
     return rest_tag
-    
-# def open_review_page_to_end():
-    
-#     flag = True
-#     while flag:
-#         try :
-#             driver.find_element_by_class_name('btn-more.ng-hide')
-#             print(' findmore'*10)
-#         except :
-#             click_more_btn()
-#             # time.sleep(0.5)
-#         else :
-#             review_tags = driver.find_elements_by_class_name("list-group-item")
-#             flag = False
-#             return review_tags
 
+# 클린리뷰 page more 광클, 최하단 까지 로딩
 def open_review_page_to_end():
     
     flag = True
