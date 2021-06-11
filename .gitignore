@@ -1,0 +1,4 @@
+main_2.py
+__pycache__
+.DS_Store
+data/*.pkl
